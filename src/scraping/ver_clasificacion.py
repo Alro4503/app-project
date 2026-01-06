@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-CSV_FILE = "megaevoluciones_general.csv"
+CSV_FILE = "data/megaevoluciones_general.csv"
 
 def leer_clasificacion():
     if not os.path.exists(CSV_FILE):
