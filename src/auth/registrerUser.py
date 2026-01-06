@@ -11,7 +11,7 @@ def createUser(name, surname, email, password):
 
 
 def validateInputs(name, surname, email, password):
-    
+
     # Validar que los campos no estén vacíos
     if not name or not surname or not email or not password:
         print("✘ Todos los campos son obligatorios.")
@@ -27,7 +27,7 @@ def validateInputs(name, surname, email, password):
         print("✘ El apellido debe contener solo letras y espacios (máximo 25 caracteres).")
         return False
     
-    # Validar email de forma simple: texto@texto.texto
+    # Validar email: texto@texto.texto
     email_pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
     if not re.match(email_pattern, email):
         print("✘ El email no tiene un formato válido.")

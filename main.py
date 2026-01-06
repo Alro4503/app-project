@@ -3,6 +3,7 @@ from src.auth.registrerUser import cargar_usuarios, userExists, createUser, vali
 from src.auth.login import login, verificar_sesion_activa, cerrar_sesion
 from src.scraping.scrape_pokemon_za import main as scrape_main
 from src.scraping.ver_clasificacion import main as ver_clasificacion_main
+from src.scraping.scrape_pokemon_go import main as scrape_movimientos_main
 
 
 def registrar_usuario():
@@ -28,7 +29,6 @@ def registrar_usuario():
     
     nuevo_usuario = createUser(name, surname, email, password)
 
-    # Convertir el objeto User a diccionario antes de guardar
     usuarios.append(nuevo_usuario.to_dict())
     guardar_usuarios(usuarios)
 
@@ -61,11 +61,14 @@ def menu_invitado():
 def menu_usuario_autenticado(usuario):
     """Menú para usuarios autenticados."""
     while True:
-        print("\n=== Menú Principal ===")
+        print("\n=== Menú de Herramientas Pokémon ===")
+        print(f"Usuario: {usuario.get('name', 'Entrenador')}")
+        print("-" * 30)
         print("1. Ver clasificación de Megaevoluciones")
-        print("2. Ejecutar web scraping de Pokémon")
-        print("3. Cerrar sesión")
-        print("4. Salir")
+        print("2. Ejecutar web scraping de Pokémon Z-A")
+        print("3. Consultar Mejores Movimientos")
+        print("4. Cerrar sesión")
+        print("5. Salir")
         
         opcion = input("Selecciona una opción: ").strip()
 
@@ -74,9 +77,11 @@ def menu_usuario_autenticado(usuario):
         elif opcion == "2":
             scrape_main()
         elif opcion == "3":
+            scrape_movimientos_main()
+        elif opcion == "4":
             cerrar_sesion()
             return None
-        elif opcion == "4":
+        elif opcion == "5":
             print("Saliendo...")
             sys.exit(0)
         else:

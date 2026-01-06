@@ -26,7 +26,6 @@ def mostrar_tabla(df):
     pd.set_option('display.width', 150)
     pd.set_option('display.max_columns', None)
     
-    # Aquí ajusta columnas si sabes sus nombres o déjalo así para mostrar todo:
     print(df.to_string(index=False))
     
     print("="*80)
