@@ -22,5 +22,11 @@
         "surname": "Jr",
         "email": "eufarei@gmail.com",
         "password": "Balondeplaya1!"
+    },
+    {
+        "name": "Sergi",
+        "surname": "Fernandez",
+        "email": "sergi@gmail.com",
+        "password": "Sergiacomon1!"
     }
 ]
