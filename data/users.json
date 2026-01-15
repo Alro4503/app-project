@@ -28,5 +28,11 @@
         "surname": "Fernandez",
         "email": "sergi@gmail.com",
         "password": "Sergiacomon1!"
+    },
+    {
+        "name": "a",
+        "surname": "a",
+        "email": "a@example.com",
+        "password": "Contraseña123!"
     }
 ]
