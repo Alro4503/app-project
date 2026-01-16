@@ -34,5 +34,11 @@
         "surname": "a",
         "email": "a@example.com",
         "password": "Contraseña123!"
+    },
+    {
+        "name": "user",
+        "surname": "userez",
+        "email": "user1@gmail.com",
+        "password": "Contraseña1!"
     }
 ]
