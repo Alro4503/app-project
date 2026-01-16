@@ -13,8 +13,6 @@ def fetch_html(pokedex_number):
     return resp.text
 
 def parse_pokemon_name(soup):
-    # Buscamos el h1 o el h2 principal que contiene el nombre
-    # En esta web, el nombre suele estar en un h1 dentro del header
     title_tag = soup.find("h1")
     if title_tag:
         return title_tag.text.strip()
@@ -73,7 +71,6 @@ def main():
         
         print(f"Buscando información...")
         
-        # Extraemos nombre y movimientos
         nombre = parse_pokemon_name(soup)
         datos = parse_movesets(soup)
         

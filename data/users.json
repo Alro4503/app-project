@@ -22,5 +22,23 @@
         "surname": "Jr",
         "email": "eufarei@gmail.com",
         "password": "Balondeplaya1!"
+    },
+    {
+        "name": "Sergi",
+        "surname": "Fernandez",
+        "email": "sergi@gmail.com",
+        "password": "Sergiacomon1!"
+    },
+    {
+        "name": "a",
+        "surname": "a",
+        "email": "a@example.com",
+        "password": "Contraseña123!"
+    },
+    {
+        "name": "user",
+        "surname": "userez",
+        "email": "user1@gmail.com",
+        "password": "Contraseña1!"
     }
 ]
