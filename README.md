@@ -66,14 +66,9 @@
 # Instalación y Configuración
 
     1. Clonar repositorio
-
-        git clone https://github.com/tu-Alro4503/pokemon-toolkit.git
-        cd pokemon-toolkit
-
     2. Instalar dependencias: Asegúrate de tener Python 3.x instalado. Luego, ejecuta:
-    
+        cd pokemon-toolkit
         pip install -r requirements.txt
-
 # Uso
     · Versión de Consola (CLI):
 
@@ -101,3 +96,4 @@
     Las contraseñas se validan bajo criterios de: mínimo 8 caracteres, una mayúscula, un número y un carácter especial.
 
     El sistema utiliza un archivo users.json local. No incluir este archivo en commits públicos si contiene datos reales.
+
